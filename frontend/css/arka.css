@@ -1,0 +1,510 @@
+
+
+.header-title {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 500px;
+  height: 80px;
+  color: #0088FF;
+  font-size: 40px;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: bold;
+  border-bottom: 1px solid #E8E8E8;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+.orders-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  border: 2px solid #E8E8E8;
+  border-radius: 5px;
+  min-width: 300px;
+}
+
+.orders-title-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  background-color: #F6F5F5;
+  width: auto;
+  height: 80px;
+  padding: 10px;
+  border-bottom: 2px solid #E8E8E8;
+}
+
+.orders-detail-container {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  background-color: white;
+  min-height: 300px;
+}
+
+.order-info-detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: auto;
+  height: 400px;;
+  margin: 13px;
+  border: 2px solid #E8E8E8;
+  border-radius: 5px;
+}
+
+.outer-orders-detail-container {
+  width: 550px;
+  min-width: 550px;
+}
+
+
+.order-name-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: 20%;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  font-size: 24px;
+  color: black;
+  background-color: #F6F5F5;
+}
+
+.order-info-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 65%;
+  background: white;
+  padding: 10px;
+}
+
+.order-detail-address {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: auto;
+  height: 50%;
+}
+
+.order-detail-total-column-left {
+  justify-content: flex-start;
+  text-align: left;
+  width: auto;
+  height: auto;
+}
+
+.order-detail-total-column-right {
+  justify-content: flex-start;
+  text-align: RIGHT;
+  width: auto;
+  height: auto;
+}
+
+
+.total-container {
+  text-align: left;
+  width: auto;
+  height: auto;
+}
+
+.bottom-order-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 15%;
+  padding: 15px;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #0088FF;
+  background-color: #F6F5F5;
+  text-align: center;
+}
+
+
+.delete-container {
+  display: flex;
+  height: 40px;
+  width: auto;
+  align-content:  flex-end;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+
+.order-info-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 1px;
+  margin-left: 5px;
+}
+
+.order-info-title-m {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 1px;
+  margin-left: 5px;
+  text-align: left;
+}
+
+.select-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.price-breakdown-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 1px;
+  margin-left: 35px;
+  border-top: 1px solid black;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+
+.order-info {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 1px;
+  margin-left: 5px;
+}
+
+/*forms*/
+
+.forms-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 80%;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+.outer-form-container {
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  border: 2px solid #E8E8E8;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  min-width: 300px;
+}
+
+.form-title {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 10px;
+  background-color: #F6F5F5;
+  border-bottom: 2px solid #E8E8E8;
+}
+
+.inner-form-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.form-container {
+  width: 90%
+}
+
+.input-title {
+  font-size: 13px;
+  font-weight: bold;
+
+  margin-top: 12px;
+  padding-left: 4px;
+}
+
+.input {
+  width: 97%;
+  height: 33px;
+  border: 2px solid #E8E8E8;
+  border-radius: 5px;
+  margin: 2px;
+  padding-left: 3px;
+}
+
+.dropdown {
+  width: 120px;
+  height: 20px;
+}
+
+.save-button {
+  width: 75px;
+  height: 33px;
+  border: 2px solid #E8E8E8;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+  margin-left: 89px;
+  margin-top: 10px;
+  transition: .5s ease;
+}
+
+.form-button {
+  width: 75px;
+  height: 33px;
+  border: 2px solid #E8E8E8;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+  margin-left: 50px;
+}
+
+/*this is inside App*/
+
+.form-main-container {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+
+.children-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/*Session Form*/
+
+.session-form-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 300px;
+  max-width: 350px;
+  min-width: 300px;
+  height: auto;
+  margin-top: 50px;
+}
+
+.session-outer-form-container {
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  border: 2px solid #E8E8E8;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.session-form-title {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 80px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #F6F5F5;
+  border-bottom: 2px solid #E8E8E8;
+}
+
+.session-inner-form-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+
+.session-form-container {
+  width: auto;
+}
+
+.bottom-session-container {
+  display: flex;
+  width: auto;
+  height: 80px;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.link-session {
+  color: #0088FF;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.input-2 {
+  width: 60%;
+  height: 33px;
+  border: 2px solid #E8E8E8;
+  border-radius: 5px;
+  margin: 2px;
+  padding-left: 3px;
+}
+
+.input-3 {
+  width: 36%;
+  height: 33px;
+  border: 2px solid #E8E8E8;
+  border-radius: 5px;
+  margin: 2px;
+  padding-left: 3px;
+}
+
+.input-4 {
+  width: 48%;
+  height: 33px;
+  border: 2px solid #E8E8E8;
+  border-radius: 5px;
+  margin: 2px;
+  padding-left: 3px;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.quantity-title {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.order-detail-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.order-detail-total-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order-detail-columns-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.order-detail-columns-right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.total {
+  border-top: 1px solid black;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+
+
+.status-container-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: auto;
+  text-align: center;
+  height: 30px;
+  margin: 2px;
+
+}
+
+.manufacturer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 220px;
+  text-align: center;
+  height: 50px;
+  margin: 2px;
+  color: black;
+}
+
+.status-container {
+  display: flex;
+  width: auto;
+  text-align: left;
+  height: 30px;
+  margin: 2px;
+  justify-content: flex-start;
+}
+
+.status-outer-container {
+  display: flex;
+  flex-flow: column;
+  width: 170px;
+  text-align: left;
+  height: 50px;
+  color: black;
+}
+
+.signout_button {
+    color: #0088FF;
+    font-weight: bold;
+    margin-left: 8px;
+    text-decoration: none;
+    position:absolute;
+    transition: .5s ease;
+    top: 5%;
+    left: 90%;
+    border: 3px solid #FAFAFA;
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+
+
+.signout_button:hover {
+  background: #0088FF;
+  color: white;
+  text-decoration: none;
+}
+
+.save-button:hover {
+  background: #0088FF;
+  color: white;
+}
