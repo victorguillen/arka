@@ -30,13 +30,13 @@ class Forms extends React.Component {
     this.handleOrderSubmit = this.handleOrderSubmit.bind(this);
   }
 
+  // after hitting submit it sends the order to the createOrder API
   handleOrderSubmit(e) {
     e.preventDefault();
-
     this.props.createOrder(this.state.order);
-
   }
 
+  // function to update state
   updateOrder(field) {
     return ( (e) => {
         let newState = this.state.order;
@@ -46,6 +46,8 @@ class Forms extends React.Component {
     );
 	}
 
+  // function that calculates the SubTotal, it changes the unit price depending
+  // on the quantity
   updateQuantity() {
     return ( (e) => {
       let newState = this.state.order;
@@ -83,6 +85,7 @@ class Forms extends React.Component {
     });
 	}
 
+  // function that updates the shipping type and price / total
   updateShipping() {
     return ( (e) => {
       let newState = this.state.order;

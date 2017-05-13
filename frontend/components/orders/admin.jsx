@@ -10,10 +10,12 @@ class Admin extends React.Component {
     this.admin = this.admin.bind(this);
   }
 
+  // fetch every existing order
   componentDidMount() {
 		this.props.fetchOrders();
 	}
 
+  // function to update the order status
   updateOrderStatus(order) {
     if (order.status === "order-placed") {
       order.status = "order-processed";
@@ -24,6 +26,7 @@ class Admin extends React.Component {
     }
   }
 
+  // function to update the manufacturer
   updateOrderMan(order, e) {
     if (e.currentTarget.value !== "") {
       order.mfgName = e.currentTarget.value;
@@ -31,12 +34,7 @@ class Admin extends React.Component {
     }
   }
 
-  admin() {
-    if(this.props.user) {
-
-    }
-  }
-
+  // renders individual orders, added fields to select manufacturer and order status
   orderDetail() {
     if(this.props.orders.length > 0) {
       return (

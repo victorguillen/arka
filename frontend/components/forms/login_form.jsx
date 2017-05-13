@@ -15,6 +15,8 @@ class LoginForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  // after loging out, the user lands at the login page which resets the state
+  // to prevent the state from persisting for the next user
   componentDidMount() {
     this.props.resetState();
   }
@@ -25,6 +27,7 @@ class LoginForm extends React.Component {
       .then( () => this.route());
   }
 
+  // routes depending if its a regular user or admin
   route() {
     if (this.props.user.admin) {
       hashHistory.push(

@@ -94,12 +94,6 @@ Router.post('/login', (req, res, next) => {
             expiresIn: 60*60*24 // expires in 24 hours
           });
           res.send(user);
-
-        // res.json({
-        //   success: true,
-        //   message: 'This is the token',
-        //   token: token
-        // });
       }
     }
   });

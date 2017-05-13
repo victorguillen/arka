@@ -5,38 +5,14 @@ import Forms from '../forms/forms_container';
 class Orders extends React.Component {
   constructor(props) {
     super(props);
-    this.updateOrderStatus = this.updateOrderStatus.bind(this);
-    this.updateOrderMan = this.updateOrderMan.bind(this);
-    this.admin = this.admin.bind(this);
   }
 
+  // fetch all user orders when they land at their page
   componentDidMount() {
 		this.props.fetchOrder(this.props.routeParams._id);
 	}
 
-  updateOrderStatus(order) {
-    if (order.status === "order-placed") {
-      order.status = "order-processed";
-      this.props.updateOrder(order);
-    } else {
-      order.status = "order-placed";
-      this.props.updateOrder(order);
-    }
-  }
-
-  updateOrderMan(order, e) {
-    if (e.currentTarget.value !== "") {
-      order.mfgName = e.currentTarget.value;
-      this.props.updateOrder(order);
-    }
-  }
-
-  admin() {
-    if(this.props.user) {
-
-    }
-  }
-
+  // this function renders every order individually
   orderDetail() {
     if(this.props.orders.length > 0) {
       return (
@@ -91,24 +67,10 @@ class Orders extends React.Component {
                       <div className='order-info'>{order.status}</div>
                     </div>
                   </div>
-                  <div className="status-container-checkbox">
-                    <div>
-                      <div className='order-info-title'>Change Status:</div>
-                    </div>
-                      <input  type="checkbox" value="" onChange={() => this.updateOrderStatus(order)}/>
-                  </div>
                 </div>
                 <div className="manufacturer">
                   <div>
                     <div className='order-info-title-m'>Manufacturer: {order.mfgName}</div>
-                  </div>
-                  <div className="select-box">
-                    <select onChange={(e) => this.updateOrderMan(order, e)}>
-                      <option value="Brookfield Box">Brookfield Box</option>
-                      <option value="Pratt Industries">Pratt Industries</option>
-                      <option value="California Box">California Box</option>
-                      <option value="Shillington Box">Shillington Box</option>
-                    </select>
                   </div>
                 </div>
               </div>
@@ -121,6 +83,8 @@ class Orders extends React.Component {
     }
   }
 
+  // used bootstrap to make the page responsive
+  // renders the orders and the form to create an order
   render() {
     return (
         <div className="row">

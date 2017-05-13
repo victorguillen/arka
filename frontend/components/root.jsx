@@ -7,8 +7,6 @@ import Admin from './orders/admin_container';
 import LoginForm from './forms/login_form_container';
 import SignupForm from './forms/signup_form_container';
 
-
-// <Route path='/users/:_id' component={LoginForm} />
 const Root = ({store}) => {
   return(
     <Provider store={store}>
